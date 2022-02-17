@@ -61,7 +61,7 @@ Restricted content:- Server allows to access only particular amount of files to 
 > Server Side Request Forgery or SSRF is a vulnerability in which an attacker forces a server to perform requests on their behalf.
 
 ## Table of Contents
-* [Introduction](#
+* [Introduction](#server-side-request-forgery-ssrf)
 * [Tools](#tools)
 * [Payloads with localhost](#payloads-with-localhost)
 * [Bypassing filters](#bypassing-filters)
