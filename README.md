@@ -7,7 +7,7 @@ SSRF stands for the Server Side Request Forgery. SSRF is a server site attack wh
 ### 1. Blind SSRF: 
 In a Blind SSRF,  attacker are not able to control the data of  packet B  that are sent to the application in a trusted internal network. Here attacker can control the IP address and ports of server. To exploit this type of SSRF we have to feed URL followed by the colon and port number, by observing responses and error messages from the server we can find the open and close ports of server.We have try this procedure for the different ports to check their status.
 
-Example :
+> Example :
 
 http://example.com:1337
 http://example.com:9923
@@ -18,7 +18,7 @@ http://example.com:22
 ### 2. Limited Response / Partial SSRF :
 In this type of SSRF we get limited response from the server like title of the page or got access to resources but can’t see the data. We can control only certain parts of packet B that arrive internal application this type of vulnerability can be used to read local system files such as /etc/config, /etc/hosts, etc/passwd and many others. By using file:// protocol we can read file on the system.In some cases  XXE injection ,DDos these type of vulnerability may useful be exploit Partial SSRF Vulnerability.
 
-Example :
+> Example :
 
 file:///etc/hosts
 file:///etc/config
@@ -28,7 +28,7 @@ file:///etc/passwd
 ### 3. Full Response SSRF :
 In Full SSRF we have complete control over the Packet B (shown in fig). Now we can access the services running of the internal network and find the vulnerabilities in internal network. In this type of SSRF we can use the protocols like file://, dict://, http://, gopher://, etc. here we have large scope of creating different request and exploit the internal network if any vulnerabilities are present. Full SSRF vulnerability may cause the application crash through buffer overflow, by sending large string in the request causes the buffer overflow.
 
-Example :
+> Example :
 
 http://192.168.1.8/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
@@ -45,5 +45,5 @@ Restricted content:- Server allows to access only particular amount of files to 
 
 1. Always make sure that you are making request to back end server on the behalf of public server not from the browser.
 2. To fetch the data from server also try http://localhost/xyz/  with the http://127.0.0.1/xyz.
-Server may have the firewall protection always try to bypass the firewall if possible.
-Make sure that request is coming from server not from your local host.
+3. Server may have the firewall protection always try to bypass the firewall if possible.
+4. Make sure that request is coming from server not from your local host.
