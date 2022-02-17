@@ -25,6 +25,8 @@ http://example.com:43
 http://example.com:22
 ```
 
+![blind](https://github.com/paulveillard/cybersecurity-ssrf/blob/main/img/Blind-SSRF.png)
+
 ### 2. Limited Response / Partial SSRF :
 In this type of SSRF we get limited response from the server like title of the page or got access to resources but can’t see the data. We can control only certain parts of packet B that arrive internal application this type of vulnerability can be used to read local system files such as /etc/config, /etc/hosts, etc/passwd and many others. By using file:// protocol we can read file on the system.In some cases  XXE injection ,DDos these type of vulnerability may useful be exploit Partial SSRF Vulnerability.
 
