@@ -2,7 +2,11 @@
 > An ongoing & curated collection of awesome web vulnerability - Server-side request forgery software practices and remediation, libraries and frameworks, best guidelines and technical resources about SSRF.
 
 ## Whar is Server Side Request Forgery (SSRF)?
-- [A Server-Side Request Forgery (SSRF)](https://en.wikipedia.org/wiki/Server-side_request_forgery) attack involves an attacker abusing server functionality to access or modify resources. The attacker targets an application that supports data imports from URLs or allows them to read data from URLs. URLs can be manipulated, either by replacing them with new ones or by tampering with URL path traversal.
+- [A Server-Side Request Forgery (SSRF)](https://en.wikipedia.org/wiki/Server-side_request_forgery) attack involves an attacker abusing server functionality to access or modify resources. 
+
+ ![attacker](https://github.com/paulveillard/cybersecurity-ssrf/blob/main/img/server-side-request-forgery.png)
+ 
+The attacker targets an application that supports data imports from URLs or allows them to read data from URLs. URLs can be manipulated, either by replacing them with new ones or by tampering with URL path traversal.
 
 - Typically, attackers supply a URL (or modify an existing one) and the code running on the server reads or submits data to it. Attackers can leverage URLs to gain access to internal data and services that were not meant to be exposed – including HTTP-enabled databases and server configuration data.
 
