@@ -1,7 +1,7 @@
 # Server-Side Request Forgery (SSRF)
 > An ongoing & curated collection of awesome web vulnerability - Server-side request forgery software practices and remediation, libraries and frameworks, best guidelines and technical resources about SSRF.
 
-## Whar is Server Side Request Forgery (SSRF)?
+## `What is Server Side Request Forgery (SSRF)?`
 - [A Server-Side Request Forgery (SSRF)](https://en.wikipedia.org/wiki/Server-side_request_forgery) attack involves an attacker abusing server functionality to access or modify resources. 
 
  ![attacker](https://github.com/paulveillard/cybersecurity-ssrf/blob/main/img/server-side-request-forgery.png)
@@ -13,7 +13,7 @@ The attacker targets an application that supports data imports from URLs or allo
 - Once an attacker has tampered with the request, the server receives it and attempts to read data to the altered URL. Even for services that aren’t exposed directly on the public internet, attackers can select a target URL, which enables them to read the data.
 
 
-## Types Of SSRF :
+## `Types Of SSRF :`
 ### 1. Blind SSRF: 
 In a Blind SSRF,  attacker are not able to control the data of  packet B  that are sent to the application in a trusted internal network. Here attacker can control the IP address and ports of server. To exploit this type of SSRF we have to feed URL followed by the colon and port number, by observing responses and error messages from the server we can find the open and close ports of server.We have try this procedure for the different ports to check their status.
 ```
