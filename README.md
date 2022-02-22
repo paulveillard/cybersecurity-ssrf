@@ -121,14 +121,14 @@ Restricted content:- Server allows to access only particular amount of files to 
   * [SSRF URL for Docker](#ssrf-url-for-docker)
   * [SSRF URL for Rancher](#ssrf-url-for-rancher)
 
-## Tools
+## `Tools`
 
 - [SSRFmap - https://github.com/swisskyrepo/SSRFmap](https://github.com/swisskyrepo/SSRFmap)
 - [Gopherus - https://github.com/tarunkant/Gopherus](https://github.com/tarunkant/Gopherus)
 - [See-SURF - https://github.com/In3tinct/See-SURF](https://github.com/In3tinct/See-SURF)
 - [SSRF Sheriff - https://github.com/teknogeek/ssrf-sheriff](https://github.com/teknogeek/ssrf-sheriff)
 
-## Payloads with localhost
+## `Payloads with localhost`
 
 Basic SSRF v1
 
@@ -149,7 +149,7 @@ http://localhost:443
 http://localhost:22
 ```
 
-## Bypassing filters
+## `Bypassing filters`
 
 ### Bypass using HTTPS
 
